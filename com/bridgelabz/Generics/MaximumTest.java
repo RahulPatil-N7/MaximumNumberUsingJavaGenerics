@@ -24,9 +24,21 @@ public class MaximumTest {
 	@Test
 	public void integerAtFirstPosition() {
 		Maximum maximum = new Maximum();
-		int result = maximum.findMax(16, 15, 10);
+		int result = maximum.findMax(30, 20, 10);
 		System.out.println("First Position is: " + result);
 		int expected = 16;
+		Assert.assertEquals(expected,result);
+	}
+	
+	/* Test Case for the Integer where
+	 *  maximum value at second position
+	 */
+	@Test
+	public void integerAtSecondPosition() {
+		Maximum maximum = new Maximum();
+		int result = maximum.findMax(10, 20, 15);
+		System.out.println("Second Position is: " + result);
+		int expected = 20;
 		Assert.assertEquals(expected,result);
 	}
 }
