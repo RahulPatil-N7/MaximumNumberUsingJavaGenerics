@@ -84,12 +84,25 @@ public class MaximumTest {
 	 *  maximum value at second position
 	 */
 	@Test
-	public void floatAtSecondtPosition() {
+	public void floatAtSecondPosition() {
 		Maximum maximum = new Maximum();
 		
 		Float result = maximum.findMax(10.2f, 15.2f, 9.4f);
 		System.out.println("Second Position is: " + result);
 		Float expected = 15.2f;
+		Assert.assertEquals(expected,result);
+	}
+	
+	/* Test Case for the float where
+	 *  maximum value at third position
+	 */
+	@Test
+	public void floatAtThirdPosition() {
+		Maximum maximum = new Maximum();
+		
+		Float result = maximum.findMax(10.2f, 15.2f, 20.4f);
+		System.out.println("Third Position is: " + result);
+		Float expected = 20.4f;
 		Assert.assertEquals(expected,result);
 	}
 }
