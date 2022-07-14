@@ -79,4 +79,17 @@ public class MaximumTest {
 		Float expected = 10.20f;
 		Assert.assertEquals(expected,result);
 	}
+	
+	/* Test Case for the float where
+	 *  maximum value at second position
+	 */
+	@Test
+	public void floatAtSecondtPosition() {
+		Maximum maximum = new Maximum();
+		
+		Float result = maximum.findMax(10.2f, 15.2f, 9.4f);
+		System.out.println("Second Position is: " + result);
+		Float expected = 15.2f;
+		Assert.assertEquals(expected,result);
+	}
 }
