@@ -26,7 +26,7 @@ public class MaximumTest {
 		Maximum maximum = new Maximum();
 		int result = maximum.findMax(30, 20, 10);
 		System.out.println("First Position is: " + result);
-		int expected = 16;
+		int expected = 30;
 		Assert.assertEquals(expected,result);
 	}
 	
