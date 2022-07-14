@@ -18,6 +18,7 @@ public class PrintArray<T> {
 		printArr.toPrint(integerArr);
 		max.findIntMax();
 		max.findFloatMaximum();
+		max.findStringMaximum();
 		
 	}
 

@@ -3,7 +3,7 @@ package com.bridgelabz.Generics;
 public class Maximum {
 	//generic method to find maximum number
 	public <T extends Comparable<T>> T findMax(T a, T b, T c) {
-		System.out.println("\nThe numbers are : " + a + ","+ b + "," + c);
+		System.out.println("\nThe Numbers/Strings are : " + a + ","+ b + "," + c);
 		
 		T max = a;
 		if (max.compareTo(b) < 0) {
