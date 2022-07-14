@@ -119,4 +119,16 @@ public class MaximumTest {
 		System.out.println("The maximum string is :"+ maximum.findMax(fruit1,fruit2,fruit3));
 	}
 	
+	/* Test Case for the string where
+	 *  maximum value at first position
+	 */
+	@Test
+	public void stringAtFirstPosition() {
+		Maximum maximum = new Maximum();
+		
+		String result = maximum.findMax("Peach", "Banana", "Apple");
+		System.out.println("First Position is: " + result);
+		String expected = "Peach";
+		Assert.assertEquals(expected,result);
+	}
 }
