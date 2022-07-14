@@ -131,4 +131,17 @@ public class MaximumTest {
 		String expected = "Peach";
 		Assert.assertEquals(expected,result);
 	}
+	
+	/* Test Case for the string where
+	 *  maximum value at second position
+	 */
+	@Test
+	public void stringAtSecondPosition() {
+		Maximum maximum = new Maximum();
+		
+		String result = maximum.findMax("Apple", "Peach", "Banana");
+		System.out.println("Second Position is: " + result);
+		String expected = "Peach";
+		Assert.assertEquals(expected,result);
+	}
 }
