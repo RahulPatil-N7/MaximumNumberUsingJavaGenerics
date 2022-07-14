@@ -66,4 +66,17 @@ public class MaximumTest {
 		Float num3 = (float) (Math.random() * 1000);
 		System.out.println("The maximum float number is :"+ maximum.findMax(num1,num2,num3));
 	}
+	
+	/* Test Case for the float where
+	 *  maximum value at first position
+	 */
+	@Test
+	public void floatAtFirstPosition() {
+		Maximum maximum = new Maximum();
+		
+		Float result = maximum.findMax(10.20f, 8.20f, 9.40f);
+		System.out.println("First Position is: " + result);
+		Float expected = 10.20f;
+		Assert.assertEquals(expected,result);
+	}
 }
