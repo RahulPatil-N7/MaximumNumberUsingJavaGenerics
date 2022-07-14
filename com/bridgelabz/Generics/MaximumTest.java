@@ -144,4 +144,17 @@ public class MaximumTest {
 		String expected = "Peach";
 		Assert.assertEquals(expected,result);
 	}
+	
+	/* Test Case for the string where
+	 *  maximum value at third position
+	 */
+	@Test
+	public void stringAtThirdPosition() {
+		Maximum maximum = new Maximum();
+		
+		String result = maximum.findMax("Apple", "Banana", "Peach");
+		System.out.println("Third Position is: " + result);
+		String expected = "Peach";
+		Assert.assertEquals(expected,result);
+	}
 }
