@@ -1,5 +1,6 @@
 package com.bridgelabz.Generics;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximumTest {
@@ -15,5 +16,17 @@ public class MaximumTest {
 		Integer c = (int) (Math.random() * 1000);
 		System.out.println("The maximum Integer is :"+ maximum.findMax(a, b, c));
 
+	}
+	
+	/* Test Case for the Integer where
+	 *  maximum value at first position
+	 */
+	@Test
+	public void integerAtFirstPosition() {
+		Maximum maximum = new Maximum();
+		int result = maximum.findMax(16, 15, 10);
+		System.out.println("First Position is: " + result);
+		int expected = 16;
+		Assert.assertEquals(expected,result);
 	}
 }
