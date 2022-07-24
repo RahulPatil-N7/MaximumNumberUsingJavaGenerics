@@ -4,15 +4,13 @@ public class PrintArray<T> {
 
 	public static void main(String[] args) {
 		//printing welcome message
-		
 		System.out.println("Welcome to Java Generics Program.");
+		Maximum max = new Maximum();
 		
-		MaximumTest max = new MaximumTest();
-		//using MaximumTest object max to call functions
+		//using Maximum object max to call functions
 		max.findIntMax();
 		max.findFloatMaximum();
 		max.findStringMaximum();
-		
 	}
 
 }

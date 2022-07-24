@@ -4,20 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MaximumTest {
-	/* Test method to find maximum
-	 * number from 3 Integers   
-	 */
-	@Test
-	public void findIntMax() {
-		Maximum maximum = new Maximum();
-		
-		Integer a = (int) (Math.random() * 1000);
-		Integer b = (int) (Math.random() * 1000);
-		Integer c = (int) (Math.random() * 1000);
-		System.out.println("The maximum Integer is :"+ maximum.findMax(a, b, c));
 
-	}
-	
 	/* Test Case for the Integer where
 	 *  maximum value at first position
 	 */
@@ -52,19 +39,6 @@ public class MaximumTest {
 		System.out.println("Third Position is: " + result);
 		int expected = 30;
 		Assert.assertEquals(expected,result);
-	}
-	
-	/* Test method to find maximum
-	 * number from 3 float numbers   
-	 */
-	@Test
-	public void findFloatMaximum() {
-		Maximum maximum = new Maximum();
-		
-		Float num1 = (float) (Math.random() * 1000);
-		Float num2 = (float) (Math.random() * 1000);
-		Float num3 = (float) (Math.random() * 1000);
-		System.out.println("The maximum float number is :"+ maximum.findMax(num1,num2,num3));
 	}
 	
 	/* Test Case for the float where
@@ -104,19 +78,6 @@ public class MaximumTest {
 		System.out.println("Third Position is: " + result);
 		Float expected = 20.4f;
 		Assert.assertEquals(expected,result);
-	}
-	
-	/* Test method to find maximum
-	 * String from 3 strings   
-	 */
-	@Test
-	public void findStringMaximum() {
-		Maximum maximum = new Maximum();
-		
-		String fruit1 = "Apple";
-		String fruit2 = "Peach";
-		String fruit3 = "Banana";
-		System.out.println("The maximum string is :"+ maximum.findMax(fruit1,fruit2,fruit3));
 	}
 	
 	/* Test Case for the string where
