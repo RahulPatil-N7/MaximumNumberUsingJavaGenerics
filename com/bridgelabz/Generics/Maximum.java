@@ -1,10 +1,11 @@
 package com.bridgelabz.Generics;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Maximum <T extends Comparable<T>> {
 	//generic method to find maximum for list of elements
-	public <T extends Comparable<T>> T findMaxList(List<T> arr) {
+	public static <T extends Comparable<T>> T findMaxList(List<T> arr) {
 		T max = arr.get(0);
 		for (T key : arr) {
 			if (key.compareTo(max) > 0) {
@@ -12,6 +13,14 @@ public class Maximum <T extends Comparable<T>> {
 			}
 		}
 		return max;
+	}
+	
+	//UC5 - generic method to print max values  
+	public static <T extends Comparable> T printMax() {
+		System.out.println("The Maximum integer num is:" + findMaxList(Arrays.asList(39, 57, 88, 65, 12, 98)));
+		System.out.println("The Maximum float num is:" + findMaxList(Arrays.asList(5.4, 3.7, 8.9, 1.9, 9.9, 4.2)));
+		System.out.println("The Maximum String  is:" + findMaxList(Arrays.asList("Banana", "Apple", "Peach", "Mango", "Orange")));
+		return null;
 	}
 	
 	//generic method to find maximum for 3 elements
